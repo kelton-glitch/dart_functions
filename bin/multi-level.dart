@@ -5,7 +5,7 @@ helloPersonAndPet ('Jason-Light', 'Max');
 print(fullName('Elton' , 'Kamgo Njomo'));
 
 ///the print fnction is not used when a function is mainly defined as viod
-print(withinTolerance(97));
+print(withinTolerance(value: 9, max: 27, min:1));
 
 }
 
@@ -25,6 +25,10 @@ String fullName(String first, String last, [String ? title]){
   }
 }
 
-bool withinTolerance (int value, [int min=0, int max = 10]){
+bool withinTolerance ({
+  required int value, 
+  int min=0,
+   int max = 10,
+   }) {
   return min <= value &&value <=max;
 }

@@ -1,9 +1,11 @@
 void main(){
-print(youAreWonderful('Bob'));
+print(youAreWonderful('Bob',10));
 }
 ///EXERCISE 1
+///
+///including exercise 2
 
-youAreWonderful(name){
-  return 'You\'re wonderful, $name';
+youAreWonderful(name, numberPeople){
+  return 'You\'re wonderful, $name. $numberPeople like you';
 }
 

@@ -11,6 +11,22 @@ void main() {
   final triple = applyMultiplier(3);
 
   print(triple(13));
+
+  ///Using forEach
+  
+  const numbers = [1,2,3,7];
+  numbers.forEach((number) { 
+    final tripled = number * 3;
+    print(tripled);
+  });
+
+  var counter = 0;
+  final incrementCounter = (){
+    counter +=1;
+  };
+
+  incrementCounter();
+  print(counter);
   }
 
 

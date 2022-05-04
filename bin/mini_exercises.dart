@@ -6,6 +6,12 @@ void main(){
   {
     print('You\'re wonderful, $name ');
   }
+
+  const people = ['Chris', 'Tiffani', 'Pablo'];
+
+  people.forEach((people) {
+    print('You\'re wonderful, $people');
+  });
 }
 ///EXERCISE 1
 ///

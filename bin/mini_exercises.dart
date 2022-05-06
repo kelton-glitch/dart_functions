@@ -9,9 +9,16 @@ void main(){
 
   const people = ['Chris', 'Tiffani', 'Pablo'];
 
-  people.forEach((people) {
-    print('You\'re wonderful, $people');
-  });
+  //refactoring
+
+  people.forEach((people) => print('You\'re wonderful, $people')
+  );
+
+  ///REFACTORING
+  ///
+  
+  final multiply = (int a, int b) => a * b;
+  print(multiply(2,4));
 }
 ///EXERCISE 1
 ///

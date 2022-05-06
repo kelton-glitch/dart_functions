@@ -15,10 +15,8 @@ void main() {
   ///Using forEach
   
   const numbers = [1,2,3,7];
-  numbers.forEach((number) { 
-    final tripled = number * 3;
-    print(tripled);
-  });
+  ///refactoring
+  numbers.forEach((number) => print(number * 3));
 
   var counter = 0;
   final incrementCounter = (){
@@ -44,8 +42,7 @@ final multiply = (int a, int b){
   return a*b;
 };
 
+///refactoring
 Function applyMultiplier (num multiplier){
-  return (num value){
-    return value * multiplier;
-  };
+  return (num value) => value * multiplier ;
 }

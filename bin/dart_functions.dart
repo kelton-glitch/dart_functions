@@ -16,7 +16,9 @@ void main() {
   
   const numbers = [1,2,3,7];
   ///refactoring
-  numbers.forEach((number) => print(number * 3));
+  for (var number in numbers) {
+    print(number * 3);
+  }
 
   var counter = 0;
   final incrementCounter = (){

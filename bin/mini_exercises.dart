@@ -17,7 +17,7 @@ void main(){
   ///REFACTORING
   ///
   
-  final multiply = (int a, int b) => a * b;
+  multiply (int a, int b) => a * b;
   print(multiply(2,4));
 }
 ///EXERCISE 1

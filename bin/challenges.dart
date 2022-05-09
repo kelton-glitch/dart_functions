@@ -2,9 +2,9 @@ import 'dart_functions.dart';
 
 ///CHALLENGE 1
 void main() {
-  print(isPrime(17));
+  //print(isPrime(17));
 
-  print(repeatTask(4, 2, multiply));
+  print(repeatTask(4, 2));
 }
 
  isPrime(int number) {
@@ -18,11 +18,16 @@ void main() {
 
 ///CHALLENGE 2
 ///
-int repeatTask (int times, int input, Function task){
-
-  for (var i=0; i<=times; i++){
-    input = input*input;
+int repeatTask (
+  int times,
+  int input,
+  //Function task,
+  ) {
+  var result = 0;
+  for (var i=1; i<=times; i++){
+    result = input*input;
+    input = result;
   }
-  return input;
+  return result;
   
 }

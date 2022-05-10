@@ -18,7 +18,24 @@ void main() {
 
 ///CHALLENGE 2
 ///
-int repeatTask (
+// int repeatTask (
+//   int times,
+//   int input,
+//   //Function task,
+//   ) {
+//   var result = 0;
+//   for (var i=1; i<=times; i++){
+//     result = input*input;
+//     input = result;
+//   }
+//   return result;
+  
+// }
+
+
+///CHALLENGE 3
+///Covert Challenge 2 to arrow syntax
+int? repeatTask (
   int times,
   int input,
   //Function task,
@@ -29,5 +46,6 @@ int repeatTask (
     input = result;
   }
   return result;
+ 
   
 }

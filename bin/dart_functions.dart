@@ -1,5 +1,9 @@
-import 'package:dart_functions/dart_functions.dart' as dart_functions;
+void main() {
+  const input =12;
+  final output = compliment(input);
+  print (output);
+}
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_functions.calculate()}!');
+String compliment (int number){
+ return '$number is the largest one-syllable number.'; 
 }
